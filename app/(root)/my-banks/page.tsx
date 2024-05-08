@@ -27,7 +27,7 @@ const MyBanks = async () => {
             {accounts && accounts.data.map((a: Account) => (
               <BankCard 
                 key={accounts.id}
-                account={a}
+                account={accounts}
                 userName={loggedIn?.firstName}
               />
             ))}
